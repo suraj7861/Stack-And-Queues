@@ -24,14 +24,16 @@ public class StackAndQueue<E> {
 	public boolean isEmpty() {
 		return head == null;
 	}
-	
+		
 	//method: print stack and queue
 	public void print() {
 		Node<E> temp = head;
-		while(temp != null) {
+		while(temp.next != null) {
 			System.out.print(temp.getKey()+"->");
 			temp = temp.next;
 		}
+		System.out.println(temp.getKey());
+		System.out.println("---------------");
 	}
 
 }

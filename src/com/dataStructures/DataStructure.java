@@ -9,8 +9,10 @@ public class DataStructure {
 		stack.push(30);
 		stack.push(56);
 		stack.print();
+		
 	}
-	public static void main(String[] args) {
+
+	public static void main(String[] args) throws Exception {
 		System.out.println("Welcome to Stack and Queue");
 		System.out.println("Push element in stack ");
 		pushElement();
