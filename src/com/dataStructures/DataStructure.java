@@ -45,6 +45,17 @@ public class DataStructure {
 		stack.print();
 	}
 
+	// method: dequeue element in Queue
+	public static void dequeueElement() {
+		// object creation
+		StackAndQueue<Integer> stack = new StackAndQueue<Integer>();
+		stack.enqueue(56);
+		stack.enqueue(30);
+		stack.enqueue(70);
+		stack.dequeue();
+		stack.print();
+	}
+
 	public static void main(String[] args) throws Exception {
 		System.out.println("Welcome to Stack and Queue");
 		System.out.println("Push element in stack ");
@@ -59,6 +70,8 @@ public class DataStructure {
 		System.out.println("enqueue element in Queue ");
 		enqueueElement();
 
+		System.out.println("dequeue element in Queue ");
+		dequeueElement();
 	}
 
 }

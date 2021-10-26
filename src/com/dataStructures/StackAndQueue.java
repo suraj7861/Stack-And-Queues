@@ -61,6 +61,20 @@ public class StackAndQueue<E> {
 		rear = rear.next;
 	}
 
+	// method: dequeue element form Queue
+	public E dequeue() {
+		if (head == null) {
+			return null;
+		}
+		Node<E> temp = head;
+		head = head.next;
+
+		if (head == null) {
+			rear = null;
+		}
+		return temp.getKey();
+	}
+
 	// method: print stack and queue
 	public void print() {
 		Node<E> temp = head;
