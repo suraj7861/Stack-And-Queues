@@ -3,6 +3,7 @@ package com.dataStructures;
 public class StackAndQueue<E> {
 	// variable declaration
 	Node<E> head;
+	Node<E> rear;
 
 	// method: push element
 	public void push(E key) {
@@ -47,6 +48,17 @@ public class StackAndQueue<E> {
 			temp = temp.next;
 		}
 		temp.next = null;
+	}
+
+	// enqueue element in Queue
+	public void enqueue(E key) {
+		Node<E> newNode = new Node<E>(key);
+		if (head == null) {
+			head = newNode;
+			rear = newNode;
+		}
+		rear.next = newNode;
+		rear = rear.next;
 	}
 
 	// method: print stack and queue

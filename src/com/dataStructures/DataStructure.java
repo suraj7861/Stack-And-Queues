@@ -35,6 +35,15 @@ public class DataStructure {
 		System.out.println("------------------");
 	}
 
+	// method: enqueue element in Queue
+	public static void enqueueElement() {
+		// object creation
+		StackAndQueue<Integer> stack = new StackAndQueue<Integer>();
+		stack.enqueue(56);
+		stack.enqueue(30);
+		stack.enqueue(70);
+		stack.print();
+	}
 
 	public static void main(String[] args) throws Exception {
 		System.out.println("Welcome to Stack and Queue");
@@ -47,6 +56,8 @@ public class DataStructure {
 		System.out.println("Pop element in stack ");
 		popElement();
 
+		System.out.println("enqueue element in Queue ");
+		enqueueElement();
 
 	}
 
