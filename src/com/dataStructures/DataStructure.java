@@ -32,7 +32,9 @@ public class DataStructure {
 		stack.push(56);
 		stack.pop();
 		stack.print();
+		System.out.println("------------------");
 	}
+
 
 	public static void main(String[] args) throws Exception {
 		System.out.println("Welcome to Stack and Queue");
@@ -44,6 +46,8 @@ public class DataStructure {
 
 		System.out.println("Pop element in stack ");
 		popElement();
+
+
 	}
 
 }

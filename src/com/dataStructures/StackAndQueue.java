@@ -37,7 +37,7 @@ public class StackAndQueue<E> {
 		System.out.println(temp.getKey());
 	}
 
-//pop element
+	// pop element
 	public void pop() throws Exception {
 		if (isEmpty()) {
 			throw new Exception("popping from empty stack is not allowed");
